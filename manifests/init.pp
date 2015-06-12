@@ -15,7 +15,7 @@ class alfred (
     provider => 'brewcask',
     require  => Homebrew::Tap['halyard/casks']
   }  ->
-  osx_login_item { 'Alfred':
+  osx_login_item { 'Alfred 2':
     hidden => true,
     path   => $install_path
   } ~>
