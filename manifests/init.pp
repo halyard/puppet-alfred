@@ -8,7 +8,7 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #
 class alfred (
-  $package = 'halyard/casks/alfred-halyard',
+  $package = 'alfred-halyard',
   $install_path = "/Users/${::boxen_user}/Applications/Alfred 2.app"
 ) {
   package { $package:
