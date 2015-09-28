@@ -1,11 +1,6 @@
 # == Class: alfred
 #
-# Full description of class alfred here.
-#
-# === Parameters
-#
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
+# Install and configure Alfred
 #
 class alfred (
   $package = 'alfred-halyard',
