@@ -1,0 +1,22 @@
+{
+  "name": "halyard-alfred",
+  "version": "0.0.5",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure alfred via Boxen",
+  "source": "https://github.com/halyard/puppet-alfred",
+  "project_page": "https://github.com/halyard/puppet-alfred",
+  "issues_url": "https://github.com/halyard/puppet-alfred/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
+  ]
+}

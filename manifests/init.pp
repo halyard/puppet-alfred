@@ -6,7 +6,8 @@ class alfred (
   $package = 'alfred-halyard',
   $install_path = "/Users/${::boxen_user}/Applications/Alfred 2.app",
   $license_src = 'licenses/alfred',
-  $license_dst = "/Users/${::boxen_user}/Library/Application Support/Alfred 2/license.plist"
+  $license_dst =
+    "/Users/${::boxen_user}/Library/Application Support/Alfred 2/license.plist"
 ) {
   dropbox::synced_file { $license_src: } ~>
   file { $license_dst:
@@ -24,7 +25,7 @@ class alfred (
     hidden => true,
     path   => $install_path
   } ~>
-  exec { "launch alfred":
+  exec { 'launch alfred':
     command     => "/usr/bin/open '${install_path}'",
     refreshonly => true,
   }
