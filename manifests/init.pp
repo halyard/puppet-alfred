@@ -9,12 +9,12 @@ class alfred (
   package { $package:
     provider => 'brewcask',
     require  => Homebrew::Tap['halyard/casks']
-  } ->
-  osx_login_item { 'Alfred 2':
+  }
+  -> osx_login_item { 'Alfred 2':
     hidden => true,
     path   => $install_path
-  } ~>
-  exec { 'launch alfred':
+  }
+  ~> exec { 'launch alfred':
     command     => "/usr/bin/open '${install_path}'",
     refreshonly => true,
   }
